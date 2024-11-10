@@ -13,6 +13,7 @@ info(){
     Enter selection [0-3]: " selection
     
     echo ""
+    echo ....................................................
     
     case $selection in
         1) echo "Hostname: $(cat /etc/hostname)" && uptime ;;
@@ -25,5 +26,6 @@ info(){
 
 while true; do
     info 
-    echo "select option or press 0 to exit "
+    echo ....................................................
+    sleep 2
 done 
