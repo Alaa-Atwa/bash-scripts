@@ -1,6 +1,6 @@
 # simple bash scripts 
 
-[parallel.processes.sh](parallel.sh) : run parallel processes.     
+[parallel.processes.sh](parallel.proccesses.sh) : run parallel processes.     
 [special-pattern](special-pattern.sh) : draw a diamond shape with dots.
 
 
