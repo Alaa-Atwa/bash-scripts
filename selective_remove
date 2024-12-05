@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# this script list items in current dir and check if you want to delete everyone of them.
+
+IFS=$'\n' # to handle a name with spaces.
+for item in $(ls);do
+  read -n 1 -p "delete ${item}: [y/n]: " ans
+  echo
+  if [[ $ans == "y" ]];then
+    /usr/bin/rm -rf ${item}
+    echo "$item Deleted!"
+    echo "================================================================"
+  else
+    continue
+  fi
+done
